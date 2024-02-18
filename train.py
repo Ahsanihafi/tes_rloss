@@ -44,9 +44,7 @@ X_train, X_test, y_train, y_test = train_test_split(X_array, data_output, test_s
 model = Sequential([Flatten(input_shape=(6,)),
                     Dense(30, activation='relu'),
                     Dense(25, activation='relu'),
-                    Dense(30, activation='relu'),
                     Dense(25, activation='relu'),
-                    Dense(20, activation='relu'),
                     Dense(10, activation='relu'),
                     Dense(1, activation=CustomActivation())])
 
